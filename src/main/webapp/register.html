@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+<script src="JS/Validation.js"></script>
+</head>
+<style>
+body {
+	margin: 0;
+	padding: 0;
+	background: url('IMG/cource.png') no-repeat center center/cover;
+	height: 100vh;
+	font-family: Arial;
+}
+</style>
+<body>
+
+	<div class="container">
+
+		<div class="row w-75 mx-auto mt-5 shadow"
+			style="min-height: 400px; background-color: white;">
+			<div class="col-md-6 p-0">
+				<img src="IMG/loginimg.png" class="img-fluid w-100 h-100"
+					style="object-fit: cover;">
+			</div>
+			<div
+				class="col-md-6 d-flex align-items-center justify-content-center">
+				<form class="w-75" action="RegisterServlet" method="post">
+					<h1 class="text-center">Sign Up</h1>
+					<div class="mb-2">
+						<label>Enter Name</label> <input type="text" class='form-control' name='name'>
+					</div>
+
+					<div class="mb-2">
+						<label>Email address</label> <input type="email"
+							class='form-control' id='email' name='email' onkeyup='validateEmail()'>
+					</div>
+					<div id='msg' style='font-size: 14px; margin-top: 5px;'></div>
+
+					<div class="mb-2">
+						<label>Enter Mobile Number</label> <input type="text"
+							class='form-control' id='mnum' name='contact' onkeyup='validatnum()'>
+					</div>
+					<div id='mmsg' style='font-size: 14px; margin-top: 5px;'></div>
+					<div class="mb-2">
+						<label>Password</label> <input type="password" id="pass"
+							class="form-control" name='password' onkeyup='validatepass()'>
+					</div>
+					<div id="passmsg" style='font-size: 14px; margin-top: 5px;'>
+
+					</div>
+					<div class="d-flex justify-content-center">
+						<button type="submit" class="btn w-100"
+							style="background-color: orange; color: white;">Sign Up
+						</button>
+					</div>
+
+					<div>
+						<p class="mt-2">
+							You have An Account? <a href="login.html"
+								class="text-black-50 fw-bold">Login</a>
+						</p>
+					</div>
+				</form>
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>

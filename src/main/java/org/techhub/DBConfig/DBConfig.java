@@ -1,5 +1,8 @@
 package org.techhub.DBConfig;
 import java.sql.*;
+import java.util.List;
+
+import org.techhub.Model.EnrollmentsModel;
 public class DBConfig {
 	protected Connection con;
 	protected PreparedStatement stmt;
@@ -8,7 +11,7 @@ public class DBConfig {
 	{
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			con=DriverManager.getConnection("jdbc:mysql://localhost:3306/MiniOnlineCourseEnrollment","root","Rutuja2905");
+			con=DriverManager.getConnection("jdbc:mysql://localhost:3306/minionlinecourseenrollment","root","Rutuja2905");
 		}
 		catch(Exception e)
 		{
